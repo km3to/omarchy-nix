@@ -48,7 +48,8 @@ let
       fastfetch
 
       # GUIs
-      chromium
+      firefox
+      brave
       obsidian
       vlc
       signal-desktop
