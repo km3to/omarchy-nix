@@ -58,6 +58,8 @@ let
       github-desktop
       gh
 
+      opencode
+
       # Containers
       docker-compose
       ffmpeg

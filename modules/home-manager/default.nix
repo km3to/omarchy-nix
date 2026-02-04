@@ -47,6 +47,7 @@ in
     (import ./wofi.nix)
     (import ./zoxide.nix)
     (import ./zsh.nix)
+    (import ./xdg.nix)
   ];
 
   home.file = {

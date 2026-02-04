@@ -4,6 +4,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     hyprland.url = "github:hyprwm/Hyprland";
     nix-colors.url = "github:misterio77/nix-colors";
+    antigravity.url = "github:tomycisco123/antigravity-nix";
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -15,6 +16,7 @@
       nixpkgs,
       hyprland,
       nix-colors,
+      antigravity,
       home-manager,
     }:
     {
