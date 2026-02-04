@@ -21,6 +21,16 @@ in
     jack.enable = true;
   };
 
+  # Configure keymap in X11 and Console
+  services.xserver.xkb = {
+    layout = "us,bg";             # Adds US English and Bulgarian
+    variant = ",phonetic";        # Second layout uses phonetic (first is default)
+    options = "grp:alt_shift_toggle"; # Switch between them with Alt + Shift
+  };
+
+  # This ensures your console (TTY) also respects these settings
+  console.useXkbConfig = true;
+
   # Initial login experience
   services.greetd = {
     enable = true;
